@@ -1,0 +1,52 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[21:53:36.339362] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -legacy_ui -files run_genus.tcl -batch 
+Date:    Sat Oct 10 21:53:36 2026
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32334116KB)
+PID:     56055
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[21:53:36.375696] Periodic Lic check successful
+[21:53:36.375704] Feature usage summary:
+[21:53:36.375705] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (3 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_genus.tcl
+Warning : This attribute will be obsolete in a next major release. [TUI-32]
+        : attribute: 'hdl_search_path', object type: 'root'
+        : Attribute 'hdl_search_path' is going to be obsoleted, use the new attribute 'init_hdl_search_path'.
+  Setting attribute of root '/': 'hdl_search_path' = ../rtl
+Error   : File error. [FILE-100] [set_db]
+        : Cannot open file '/path/to/your_pdk_target_library.lib'. File not found.
+        : Make sure that the file is a readable regular file and has the specified name.
+Error   : A library file does not exist. [LBR-68] [set_db]
+        : File '/path/to/your_pdk_target_library.lib' could not be found. File '<none>' was the last file that was successfully read in.
+        : Make sure that the library file exists or check for a typo in the file name.
+Error   : The data value for this attribute is invalid. [TUI-24] [set_db]
+        : The value '/path/to/your_pdk_target_library.lib' cannot be set for attribute 'library'.
+        : To see the usage/description for this attribute, type '::legacy::set_attribute -h <attr_name> *' (in legacy UI mode) or 'help * <attr_name> -detail' (in CUI mode).
+1
+Encountered problems processing file: run_genus.tcl
+
+Lic Summary:
+[21:53:39.269586] Cdslmd servers: cadence
+[21:53:39.269595] Feature usage summary:
+[21:53:39.269595] Genus_Synthesis
+

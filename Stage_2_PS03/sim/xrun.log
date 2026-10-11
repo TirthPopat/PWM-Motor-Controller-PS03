@@ -1,0 +1,61 @@
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.09-s003: Started on Oct 11, 2026 at 03:22:00 IST
+xrun
+	-sv
+	../tb/tb_integrated_flight_motor.sv
+	../rtl/feedback_path.v
+	../rtl/integrated_flight_motor_top.v
+	../rtl/pi_controller.v
+	../rtl/pid_engine_ps02.v
+	../rtl/protection_stage.v
+	../rtl/pwm_core.v
+	../rtl/pwm_motor_controller_top.v
+	-top tb_integrated_flight_motor
+	-access +rwc
+	-gui
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmsim: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmsim: *W,NOMTDGUI: Multi-Threaded Dumping is disabled for interactive debug mode.
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+
+-------------------------------------
+Relinquished control to SimVision...
+xcelium> 
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+--- Step 1: Initializing Integrated Flight-Control Chain ---
+--- Step 2: Testing Mode Switch (Stabilize -> Acro) ---
+--- Step 3: Injecting Cross-Block Over-Current Fault ---
+SUCCESS: System successfully entered Failsafe state!
+SUCCESS: Integrated Flight-Control Motor Chain Verification Complete!
+Simulation complete via $finish(1) at time 3545 NS + 0
+../tb/tb_integrated_flight_motor.sv:130         $finish;
+xcelium> database -open waves -into waves.shm -default
+Created default SHM database waves
+xcelium> probe -create -shm tb_integrated_flight_motor.ext_oc_fault tb_integrated_flight_motor.flight_mode_select tb_integrated_flight_motor.flight_target_setpoint tb_integrated_flight_motor.imu_sample_in tb_integrated_flight_motor.imu_valid_in tb_integrated_flight_motor.p_failsafe_shutdown tb_integrated_flight_motor.pclk tb_integrated_flight_motor.system_failsafe tb_integrated_flight_motor.pwm_h tb_integrated_flight_motor.pwm_l tb_integrated_flight_motor.p_no_shoot_through tb_integrated_flight_motor.paddr tb_integrated_flight_motor.penable tb_integrated_flight_motor.prdata tb_integrated_flight_motor.pready tb_integrated_flight_motor.presetn tb_integrated_flight_motor.psel tb_integrated_flight_motor.pslverr tb_integrated_flight_motor.pwdata tb_integrated_flight_motor.pwrite tb_integrated_flight_motor.tacho_feedback
+Created probe 1
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> run
+xmsim: *E,RNFNSH: Cannot continue simulation due to a previous $finish.
+xcelium> reset
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+Loaded snapshot worklib.tb_integrated_flight_motor:sv
+xcelium> run
+--- Step 1: Initializing Integrated Flight-Control Chain ---
+--- Step 2: Testing Mode Switch (Stabilize -> Acro) ---
+--- Step 3: Injecting Cross-Block Over-Current Fault ---
+SUCCESS: System successfully entered Failsafe state!
+SUCCESS: Integrated Flight-Control Motor Chain Verification Complete!
+Simulation complete via $finish(1) at time 3545 NS + 0
+../tb/tb_integrated_flight_motor.sv:130         $finish;
+xcelium> ^C
+xcelium> exit
+...Regained control from SimVision
+-------------------------------------
+TOOL:	xrun(64)	22.09-s003: Exiting on Oct 11, 2026 at 03:32:24 IST  (total: 00:10:24)

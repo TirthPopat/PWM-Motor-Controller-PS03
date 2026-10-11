@@ -1,0 +1,62 @@
+[10/11 00:59:48      0s] 
+[10/11 00:59:48      0s] Cadence Innovus(TM) Implementation System.
+[10/11 00:59:48      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/11 00:59:48      0s] 
+[10/11 00:59:48      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[10/11 00:59:48      0s] Options:	
+[10/11 00:59:48      0s] Date:		Sun Oct 11 00:59:48 2026
+[10/11 00:59:48      0s] Host:		ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+[10/11 00:59:48      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[10/11 00:59:48      0s] 
+[10/11 00:59:48      0s] License:
+[10/11 00:59:48      0s] 		[00:59:48.328658] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[10/11 00:59:51      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[10/11 00:59:51      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/11 00:59:58      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[10/11 00:59:59      8s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[10/11 00:59:59      8s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 00:59:59      8s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[10/11 00:59:59      8s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[10/11 00:59:59      8s] @(#)CDS: CPE v21.15-s076
+[10/11 00:59:59      8s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 00:59:59      8s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/11 00:59:59      8s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/11 00:59:59      8s] @(#)CDS: RCDB 11.15.0
+[10/11 00:59:59      8s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[10/11 00:59:59      8s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[10/11 00:59:59      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_121618_ic312.vit.ac.in_vlsi_TWfvJX.
+
+[10/11 00:59:59      8s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[10/11 01:00:00      9s] 
+[10/11 01:00:00      9s] **INFO:  MMMC transition support version v31-84 
+[10/11 01:00:00      9s] 
+[10/11 01:00:00      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/11 01:00:00      9s] <CMD> suppressMessage ENCEXT-2799
+[10/11 01:00:00      9s] <CMD> getVersion
+[10/11 01:00:00      9s] <CMD> getVersion
+[10/11 01:00:01      9s] <CMD> getVersion
+[10/11 01:00:04      9s] [INFO] Loading PVS 22.20 fill procedures
+[10/11 01:00:04     10s] <CMD> win
+[10/11 01:00:11     10s] <CMD> streamOut ../outputs_innovus/pwm_motor_controller_top.gds -mapFile /home/install/FOUNDRY/digital/45nm/LIBS/gds/gds2.map -libName DesignLib -units 1000 -mode ALL
+[10/11 01:00:11     10s] **ERROR: (IMPOGDS-2):	Cannot open '/home/install/FOUNDRY/digital/45nm/LIBS/gds/gds2.map'
+
+[10/11 01:00:57     13s] <CMD> streamOut ../outputs_innovus/pwm_motor_controller_top.gds -libName DesignLib -units 1000 -mode ALL
+[10/11 01:00:57     13s] **ERROR: Design must be in memory before running "streamOut"
+[10/11 01:00:57     13s] Design must be in memory before running "streamOut"
+[10/11 01:02:00     16s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Oct 11 01:02:00 2026
+  Total CPU time:     0:00:19
+  Total real time:    0:02:14
+  Peak memory (main): 1015.20MB
+
+[10/11 01:02:00     16s] 
+[10/11 01:02:00     16s] *** Memory Usage v#1 (Current mem = 1014.820M, initial mem = 483.863M) ***
+[10/11 01:02:00     16s] 
+[10/11 01:02:00     16s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:02:00     16s] Severity  ID               Count  Summary                                  
+[10/11 01:02:00     16s] ERROR     IMPOGDS-2            1  Cannot open '%s'                         
+[10/11 01:02:00     16s] *** Message Summary: 0 warning(s), 1 error(s)
+[10/11 01:02:00     16s] 
+[10/11 01:02:00     16s] --- Ending "Innovus" (totcpu=0:00:17.0, real=0:02:12, mem=1014.8M) ---

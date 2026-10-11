@@ -1,0 +1,23 @@
+#######################################################
+#                                                     
+#  Tempus Timing Solution Command Logging File                     
+#  Created on Sat Oct 10 23:41:36 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+#@(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+#@(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+#@(#)CDS: CPE v22.11-e028
+
+read_lib /home/install/FOUNDRY/digital/45nm/dig/lib/slow.lib
+read_verilog ../outputs_innovus/pwm_motor_controller_top_pr.v
+set_top_module pwm_motor_controller_top
+read_sdc ../outputs/pwm_motor_controller_top_syn.sdc
+read_spef ../outputs_innovus/pwm_motor_controller_top.spef
+report_timing -max_paths 10 > ../reports_tempus/setup_signoff.rpt
+report_timing -early -max_paths 10 > ../reports_tempus/hold_signoff.rpt
+report_analysis_summary > ../reports_tempus/summary.rpt
+exit

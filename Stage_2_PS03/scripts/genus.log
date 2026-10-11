@@ -1,0 +1,45 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[21:46:15.339354] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+Version: 21.14-s082_1, built Thu Jun 23 02:02:08 PDT 2022
+Options: -files run_genus.tcl -batch 
+Date:    Sat Oct 10 21:46:15 2026
+Host:    ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*1physical cpu*12th Gen Intel(R) Core(TM) i7-12700 25600KB) (32334116KB)
+PID:     55040
+OS:      Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+
+[21:46:15.188064] Periodic Lic check successful
+[21:46:15.188072] Feature usage summary:
+[21:46:15.188073] Genus_Synthesis
+Checking out license: Genus_Synthesis
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Loading tool scripts...
+Finished loading tool scripts (5 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source run_genus.tcl
+#@ Begin verbose source ./run_genus.tcl
+@file(run_genus.tcl) 2: set_attribute hdl_search_path {../rtl} /
+Error   : The tool is running in common ui mode. [TUI-509] [::unknown]
+        : Command 'set_attribute' is a legacy ui command.
+        : Use set_db/get_db instead or do set_db common_ui false at start of the run.
+#@ End verbose source ./run_genus.tcl
+
+Encountered problems processing file: run_genus.tcl
+
+Lic Summary:
+[21:46:20.170634] Cdslmd servers: cadence
+[21:46:20.170635] Feature usage summary:
+[21:46:20.170640] Genus_Synthesis
+

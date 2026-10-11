@@ -1,0 +1,337 @@
+[10/11 00:54:27      0s] 
+[10/11 00:54:27      0s] Cadence Tempus(TM) Timing Solution.
+[10/11 00:54:27      0s] Copyright 2022 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/11 00:54:27      0s] 
+[10/11 00:54:27      0s] Version:	v22.11-s001_1, built Fri Sep 16 15:45:21 PDT 2022
+[10/11 00:54:27      0s] Options:	-files run_tempus.tcl -win 
+[10/11 00:54:27      0s] Date:		Sun Oct 11 00:54:27 2026
+[10/11 00:54:27      0s] Host:		ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+[10/11 00:54:27      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[10/11 00:54:27      0s] 
+[10/11 00:54:27      0s] License:
+[10/11 00:54:27      0s] 		[00:54:27.328594] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[10/11 00:54:29      0s] 		tpsxl	Tempus Timing Signoff Solution XL	22.1	checkout succeeded
+[10/11 00:54:29      0s] 		16 CPU jobs allowed with the current license(s). Use set_multi_cpu_usage to set your required CPU count.
+[10/11 00:54:35      6s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Tempus Timing Solution v22.11-s001_1 (64bit) 09/16/2022 15:45 (Linux 3.10.0-693.el7.x86_64)
+[10/11 00:54:37      9s] @(#)CDS: NanoRoute 22.11-s001_1 NR220910-1931/22_11-UB (database version 18.20.592) {superthreading v2.19}
+[10/11 00:54:37      9s] @(#)CDS: AAE 22.11-e006 (64bit) 09/16/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 00:54:37      9s] @(#)CDS: CTE 22.11-e010_1 () Sep  5 2022 07:16:46 ( )
+[10/11 00:54:37      9s] @(#)CDS: SYNTECH 22.11-e002_1 () Aug  2 2022 07:54:00 ( )
+[10/11 00:54:37      9s] @(#)CDS: CPE v22.11-e028
+[10/11 00:54:37      9s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/11 00:54:37      9s] @(#)CDS: SGN 21.20-d001 (11-Feb-2022) (64 bit executable, TkQt5.9.1)
+[10/11 00:54:37      9s] @(#)CDS: RCDB 11.15.0
+[10/11 00:54:37      9s] @(#)CDS: STYLUS 22.10-p002_1 (09/01/2022 08:10 PDT)
+[10/11 00:54:37      9s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[10/11 00:54:37      9s] **INFO: (TMPDIR-1001): The environment variable TMPDIR is not set.
+Create and set the environment variable TMPDIR to '/tmp/ssv_tmpdir_120974_kMEhV1'.
+environment variable TMPDIR is '/tmp/ssv_tmpdir_120974_kMEhV1'.
+[10/11 00:54:38      9s] #@ Processing -files option
+[10/11 00:54:38      9s] Sourcing tcl/tk file 'run_tempus.tcl' ...
+[10/11 00:54:38      9s] <CMD> read_lib /home/install/FOUNDRY/digital/45nm/dig/lib/slow.lib
+[10/11 00:54:38      9s] <CMD> read_verilog ../outputs_innovus/pwm_motor_controller_top_pr.v
+[10/11 00:54:38     10s] <CMD> set_top_module pwm_motor_controller_top
+[10/11 00:54:38     10s] #% Begin Load MMMC data ... (date=10/11 00:54:38, mem=1221.6M)
+[10/11 00:54:38     10s] Number of views requested 1 are allowed with the current licenses... continuing with set_analysis_view.
+[10/11 00:54:38     10s] #% End Load MMMC data ... (date=10/11 00:54:38, total cpu=0:00:00.0, real=0:00:00.0, peak res=1221.9M, current mem=1221.9M)
+[10/11 00:54:38     10s] Loading view definition file from .ssv_emulate_view_definition_120974.tcl
+[10/11 00:54:38     10s] Reading default_emulate_libset_max timing library '/home/install/FOUNDRY/digital/45nm/dig/lib/slow.lib' ...
+[10/11 00:54:39     10s] Read 477 cells in library 'slow' 
+[10/11 00:54:39     10s] Ending "PreSetAnalysisView" (total cpu=0:00:00.3, real=0:00:01.0, peak res=1272.4M, current mem=1231.1M)
+[10/11 00:54:39     10s] *** End library_loading (cpu=0.01min, real=0.02min, mem=40.0M, fe_cpu=0.17min, fe_real=0.20min, fe_mem=1279.2M) ***
+[10/11 00:54:39     10s] #% Begin Load netlist data ... (date=10/11 00:54:39, mem=1231.1M)
+[10/11 00:54:39     10s] *** Begin netlist parsing (mem=1279.2M) ***
+[10/11 00:54:39     10s] Reading verilog netlist '../outputs_innovus/pwm_motor_controller_top_pr.v'
+[10/11 00:54:39     10s] 
+[10/11 00:54:39     10s] *** Memory Usage v#1 (Current mem = 1439.250M, initial mem = 619.441M) ***
+[10/11 00:54:39     10s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1439.2M) ***
+[10/11 00:54:39     10s] #% End Load netlist data ... (date=10/11 00:54:39, total cpu=0:00:00.2, real=0:00:00.0, peak res=1341.7M, current mem=1331.9M)
+[10/11 00:54:39     10s] Set top cell to pwm_motor_controller_top.
+[10/11 00:54:39     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/11 00:54:39     10s] late library set: default_emulate_libset_max
+[10/11 00:54:39     10s] early library set: default_emulate_libset_min
+[10/11 00:54:39     10s] Completed consistency checks. Status: Successful
+[10/11 00:54:39     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/11 00:54:39     10s] late library set: default_emulate_libset_max
+[10/11 00:54:39     10s] early library set: default_emulate_libset_min
+[10/11 00:54:39     10s] Completed consistency checks. Status: Successful
+[10/11 00:54:39     10s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1359.7M, current mem=1359.7M)
+[10/11 00:54:39     10s] Building hierarchical netlist for Cell pwm_motor_controller_top ...
+[10/11 00:54:39     10s] ***** UseNewTieNetMode *****.
+[10/11 00:54:39     10s] *** Netlist is unique.
+[10/11 00:54:39     10s] ** info: there are 478 modules.
+[10/11 00:54:39     10s] ** info: there are 4449 stdCell insts.
+[10/11 00:54:39     10s] 
+[10/11 00:54:39     10s] *** Memory Usage v#1 (Current mem = 1795.695M, initial mem = 619.441M) ***
+[10/11 00:54:39     10s] Set Default Input Pin Transition as 0.1 ps.
+[10/11 00:54:39     10s] Extraction setup Started 
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     10s] Summary of Active RC-Corners : 
+[10/11 00:54:39     10s]  
+[10/11 00:54:39     10s]  Analysis View: default_emulate_view
+[10/11 00:54:39     10s]     RC-Corner Name        : default_emulate_rc_corner
+[10/11 00:54:39     10s]     RC-Corner Index       : 0
+[10/11 00:54:39     10s]     RC-Corner Temperature : 25 Celsius
+[10/11 00:54:39     10s]     RC-Corner Cap Table   : ''
+[10/11 00:54:39     10s]     RC-Corner PostRoute Res Factor        : 1
+[10/11 00:54:39     10s]     RC-Corner PostRoute Cap Factor        : 1
+[10/11 00:54:39     10s]     RC-Corner PostRoute XCap Factor       : 1
+[10/11 00:54:39     10s] Starting consistency checks on late and early library sets of delay corner 'default_emulate_delay_corner'
+[10/11 00:54:39     10s] late library set: default_emulate_libset_max
+[10/11 00:54:39     10s] early library set: default_emulate_libset_min
+[10/11 00:54:39     10s] Completed consistency checks. Status: Successful
+[10/11 00:54:39     10s] Ending "SetAnalysisView" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1861.6M, current mem=1612.2M)
+[10/11 00:54:39     11s] Reading timing constraints file '/dev/null' ...
+[10/11 00:54:39     11s] Current (total cpu=0:00:11.1, real=0:00:12.0, peak res=1952.0M, current mem=1952.0M)
+[10/11 00:54:39     11s] Tech dependent Parameter, Build TLibAnalyzer for: cellAreaConsiderPadding
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) Begin ...
+[10/11 00:54:39     11s] Summary for sequential cells identification: 
+[10/11 00:54:39     11s]   Identified SBFF number: 94
+[10/11 00:54:39     11s]   Identified MBFF number: 0
+[10/11 00:54:39     11s]   Identified SB Latch number: 0
+[10/11 00:54:39     11s]   Identified MB Latch number: 0
+[10/11 00:54:39     11s]   Not identified SBFF number: 24
+[10/11 00:54:39     11s]   Not identified MBFF number: 0
+[10/11 00:54:39     11s]   Not identified SB Latch number: 0
+[10/11 00:54:39     11s]   Not identified MB Latch number: 0
+[10/11 00:54:39     11s]   Number of sequential cells which are not FFs: 32
+[10/11 00:54:39     11s] Total number of combinational cells: 316
+[10/11 00:54:39     11s] Total number of sequential cells: 150
+[10/11 00:54:39     11s] Total number of tristate cells: 10
+[10/11 00:54:39     11s] Total number of level shifter cells: 0
+[10/11 00:54:39     11s] Total number of power gating cells: 0
+[10/11 00:54:39     11s] Total number of isolation cells: 0
+[10/11 00:54:39     11s] Total number of power switch cells: 0
+[10/11 00:54:39     11s] Total number of pulse generator cells: 0
+[10/11 00:54:39     11s] Total number of always on buffers: 0
+[10/11 00:54:39     11s] Total number of retention cells: 0
+[10/11 00:54:39     11s] Total number of physical cells: 0
+[10/11 00:54:39     11s] List of usable buffers: BUFX12 BUFX16 BUFX2 BUFX20 BUFX3 BUFX4 CLKBUFX12 CLKBUFX16 CLKBUFX2 CLKBUFX20 CLKBUFX4 CLKBUFX6 CLKBUFX8 BUFX8 CLKBUFX3 BUFX6
+[10/11 00:54:39     11s] Total number of usable buffers: 16
+[10/11 00:54:39     11s] List of unusable buffers:
+[10/11 00:54:39     11s] Total number of unusable buffers: 0
+[10/11 00:54:39     11s] List of usable inverters: CLKINVX1 CLKINVX12 CLKINVX16 CLKINVX2 CLKINVX20 CLKINVX3 CLKINVX4 CLKINVX6 INVX1 INVX12 INVX2 INVX3 CLKINVX8 INVX20 INVX4 INVX6 INVX16 INVXL INVX8
+[10/11 00:54:39     11s] Total number of usable inverters: 19
+[10/11 00:54:39     11s] List of unusable inverters:
+[10/11 00:54:39     11s] Total number of unusable inverters: 0
+[10/11 00:54:39     11s] List of identified usable delay cells: DLY1X4 DLY2X4 DLY3X4 DLY1X1 DLY4X1 DLY2X1 DLY4X4 DLY3X1
+[10/11 00:54:39     11s] Total number of identified usable delay cells: 8
+[10/11 00:54:39     11s] List of identified unusable delay cells:
+[10/11 00:54:39     11s] Total number of identified unusable delay cells: 0
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Creating Cell Server ...(0, 1, 1, 1) End ...
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Deleting Cell Server Begin ...
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Deleting Cell Server End ...
+[10/11 00:54:39     11s] Ending "Cell type marking" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1982.8M, current mem=1982.8M)
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) Begin ...
+[10/11 00:54:39     11s] Summary for sequential cells identification: 
+[10/11 00:54:39     11s]   Identified SBFF number: 94
+[10/11 00:54:39     11s]   Identified MBFF number: 0
+[10/11 00:54:39     11s]   Identified SB Latch number: 0
+[10/11 00:54:39     11s]   Identified MB Latch number: 0
+[10/11 00:54:39     11s]   Not identified SBFF number: 24
+[10/11 00:54:39     11s]   Not identified MBFF number: 0
+[10/11 00:54:39     11s]   Not identified SB Latch number: 0
+[10/11 00:54:39     11s]   Not identified MB Latch number: 0
+[10/11 00:54:39     11s]   Number of sequential cells which are not FFs: 32
+[10/11 00:54:39     11s]  Visiting view : default_emulate_view
+[10/11 00:54:39     11s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = 0
+[10/11 00:54:39     11s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[10/11 00:54:39     11s]  Visiting view : default_emulate_view
+[10/11 00:54:39     11s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = 0
+[10/11 00:54:39     11s]    : PowerDomain = none : Weighted F : unweighted  = 18.40 (1.000) with rcCorner = -1
+[10/11 00:54:39     11s] TLC MultiMap info (StdDelay):
+[10/11 00:54:39     11s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + no RcCorner := 18.4ps
+[10/11 00:54:39     11s]   : default_emulate_delay_corner + default_emulate_libset_max + 1 + default_emulate_rc_corner := 18.4ps
+[10/11 00:54:39     11s]  Setting StdDelay to: 18.4ps
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Creating Cell Server ...(0, 0, 0, 0) End ...
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Deleting Cell Server Begin ...
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] TimeStamp Deleting Cell Server End ...
+[10/11 00:54:39     11s] Extraction setup Started 
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] Summary of Active RC-Corners : 
+[10/11 00:54:39     11s]  
+[10/11 00:54:39     11s]  Analysis View: default_emulate_view
+[10/11 00:54:39     11s]     RC-Corner Name        : default_emulate_rc_corner
+[10/11 00:54:39     11s]     RC-Corner Index       : 0
+[10/11 00:54:39     11s]     RC-Corner Temperature : 125 Celsius
+[10/11 00:54:39     11s]     RC-Corner Cap Table   : ''
+[10/11 00:54:39     11s]     RC-Corner PostRoute Res Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute Cap Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute XCap Factor       : 1
+[10/11 00:54:39     11s] Extraction setup Started 
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] Summary of Active RC-Corners : 
+[10/11 00:54:39     11s]  
+[10/11 00:54:39     11s]  Analysis View: default_emulate_view
+[10/11 00:54:39     11s]     RC-Corner Name        : default_emulate_rc_corner
+[10/11 00:54:39     11s]     RC-Corner Index       : 0
+[10/11 00:54:39     11s]     RC-Corner Temperature : 125 Celsius
+[10/11 00:54:39     11s]     RC-Corner Cap Table   : ''
+[10/11 00:54:39     11s]     RC-Corner PostRoute Res Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute Cap Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute XCap Factor       : 1
+[10/11 00:54:39     11s] Extraction setup Started 
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] eee: Trim Metal Layers: { }
+[10/11 00:54:39     11s] Summary of Active RC-Corners : 
+[10/11 00:54:39     11s]  
+[10/11 00:54:39     11s]  Analysis View: default_emulate_view
+[10/11 00:54:39     11s]     RC-Corner Name        : default_emulate_rc_corner
+[10/11 00:54:39     11s]     RC-Corner Index       : 0
+[10/11 00:54:39     11s]     RC-Corner Temperature : 125 Celsius
+[10/11 00:54:39     11s]     RC-Corner Cap Table   : ''
+[10/11 00:54:39     11s]     RC-Corner PostRoute Res Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute Cap Factor        : 1
+[10/11 00:54:39     11s]     RC-Corner PostRoute XCap Factor       : 1
+[10/11 00:54:39     11s] <CMD> read_sdc ../outputs/pwm_motor_controller_top_syn.sdc
+[10/11 00:54:39     11s] Current (total cpu=0:00:11.3, real=0:00:12.0, peak res=1983.5M, current mem=1944.4M)
+[10/11 00:54:39     11s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../outputs/pwm_motor_controller_top_syn.sdc, Line 9).
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] **WARN: (TCLCMD-1461):	Skipped unsupported command: set_units (File ../outputs/pwm_motor_controller_top_syn.sdc, Line 10).
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] INFO (CTE): Reading of timing constraints file ../outputs/pwm_motor_controller_top_syn.sdc completed, with 2 WARNING
+[10/11 00:54:39     11s] Ending "Constraint file reading stats" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1952.9M, current mem=1952.9M)
+[10/11 00:54:39     11s] Current (total cpu=0:00:11.3, real=0:00:12.0, peak res=1983.5M, current mem=1952.9M)
+[10/11 00:54:39     11s] <CMD> set_driving_cell -lib_cell BUFX2 [remove_from_collection [all_inputs] [get_ports {pclk presetn}]]
+[10/11 00:54:39     11s] <CMD> set_propagated_clock [all_clocks]
+[10/11 00:54:39     11s] <CMD> read_spef ../outputs_innovus/pwm_motor_controller_top.spef
+[10/11 00:54:39     11s] read_spef Option :  -rc_corner default_emulate_rc_corner ../outputs_innovus/pwm_motor_controller_top.spef -noStarN 
+[10/11 00:54:39     11s] 
+[10/11 00:54:39     11s] SPEF files for RC Corner default_emulate_rc_corner:
+[10/11 00:54:39     11s] Top-level spef file '../outputs_innovus/pwm_motor_controller_top.spef'.
+[10/11 00:54:39     11s] Start spef parsing (MEM=2195.38).
+[10/11 00:54:39     11s] Number of corners: 1
+[10/11 00:54:39     11s] Number of parallel threads processing the nets is: 1
+[10/11 00:54:39     11s] Maximum backlog used in parser: 50.
+[10/11 00:54:39     11s] Reading multiple SPEF files in parallel.
+[10/11 00:54:39     11s] RCDB /tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d Creation Started (CPU Time= 0:00:00.0  MEM= 2204.4M)
+[10/11 00:54:39     11s] Creating parasitic data file '/tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d' for storing RC.
+[10/11 00:54:40     11s] SPEF file ../outputs_innovus/pwm_motor_controller_top.spef.
+[10/11 00:54:40     11s] Number of Resistors     : 80887
+[10/11 00:54:40     11s] Number of Ground Caps   : 84148
+[10/11 00:54:40     11s] Number of Coupling Caps : 33080
+[10/11 00:54:40     11s] 
+[10/11 00:54:40     11s] RCDB /tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d Creation Completed (CPU Time= 0:00:00.3  MEM= 2241.4M)
+[10/11 00:54:40     11s] End spef parsing (MEM=2209.38 CPU=0:00:00.3 REAL=0:00:01.0).
+[10/11 00:54:40     11s] Spef for RC Corner 'default_emulate_rc_corner' was previously specified. Dropping the previous specification.
+[10/11 00:54:40     11s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=2201.383M)
+[10/11 00:54:40     11s] Opening parasitic data file '/tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d' for reading (mem: 2201.383M)
+[10/11 00:54:42     13s] Closing parasitic data file '/tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d': 0 access done (mem: 2205.383M)
+[10/11 00:54:42     13s] Lumped Parasitic Loading Completed (total cpu=0:00:01.6, real=0:00:02.0, current mem=2205.383M)
+[10/11 00:54:42     13s] 46 nets are missing in SPEF file. The names of these nets are saved in ./default_emulate_rc_corner.missing_nets.rpt.
+[10/11 00:54:42     13s] <CMD> report_timing -max_paths 10 > ../reports_tempus/setup_signoff.rpt
+[10/11 00:54:42     13s] AAE_INFO: opIsDesignInPostRouteState() is 0
+[10/11 00:54:42     13s] AAE DB initialization (MEM=2230.28 CPU=0:00:00.0 REAL=0:00:00.0) 
+[10/11 00:54:42     13s] #################################################################################
+[10/11 00:54:42     13s] # Design Name: pwm_motor_controller_top
+[10/11 00:54:42     13s] # Design Mode: 65nm
+[10/11 00:54:42     13s] # Analysis Mode: MMMC OCV 
+[10/11 00:54:42     13s] # Parasitics Mode: SPEF/RCDB 
+[10/11 00:54:42     13s] # Signoff Settings: SI Off 
+[10/11 00:54:42     13s] #################################################################################
+[10/11 00:54:43     13s] Topological Sorting (REAL = 0:00:00.0, MEM = 2258.3M, InitMEM = 2258.3M)
+[10/11 00:54:43     13s] Start delay calculation (fullDC) (1 T). (MEM=2258.31)
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] Start AAE Lib Loading. (MEM=2258.31)
+[10/11 00:54:43     13s] End AAE Lib Loading. (MEM=2277.39 CPU=0:00:00.0 Real=0:00:00.0)
+[10/11 00:54:43     13s] End AAE Lib Interpolated Model. (MEM=2277.39 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 00:54:43     13s] Opening parasitic data file '/tmp/ssv_tmpdir_120974_kMEhV1/pwm_motor_controller_top_120974_maTb93.rcdb.d/pwm_motor_controller_top.rcdb.d' for reading (mem: 2316.008M)
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] eee: Trim Metal Layers: { }
+[10/11 00:54:43     13s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 2318.0M)
+[10/11 00:54:43     14s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[10/11 00:54:43     14s] End delay calculation. (MEM=2481.45 CPU=0:00:00.4 REAL=0:00:00.0)
+[10/11 00:54:43     14s] End delay calculation (fullDC). (MEM=2481.45 CPU=0:00:00.5 REAL=0:00:00.0)
+[10/11 00:54:43     14s] *** CDM Built up (cpu=0:00:00.6  real=0:00:01.0  mem= 2481.5M) ***
+[10/11 00:54:43     14s] <CMD> report_timing -early -max_paths 10 > ../reports_tempus/hold_signoff.rpt
+[10/11 00:54:43     14s] <CMD> report_analysis_summary > ../reports_tempus/summary.rpt
+[10/11 00:54:43     14s] <CMD> report_constraint -all_violators > ../reports_tempus/violators.rpt
+[10/11 00:54:43     14s] <CMD> check_timing > ../reports_tempus/check_timing.rpt
+[10/11 00:54:43     14s] <CMD> check_timing -verbose > ../reports_tempus/check_timing_verbose.rpt
+[10/11 00:54:43     14s] <CMD> exit
+[10/11 00:54:43     14s] 
+[10/11 00:54:43     14s] *** Memory Usage v#1 (Current mem = 2413.453M, initial mem = 619.441M) ***
+[10/11 00:54:43     14s] 
+[10/11 00:54:43     14s] *** Summary of all messages that are not suppressed in this session:
+[10/11 00:54:43     14s] Severity  ID               Count  Summary                                  
+[10/11 00:54:43     14s] WARNING   TCLCMD-1461          2  Skipped unsupported command: %s          
+[10/11 00:54:43     14s] *** Message Summary: 2 warning(s), 0 error(s)
+[10/11 00:54:43     14s] 
+[10/11 00:54:43     14s] --- Ending "Tempus Timing Solution" (totcpu=0:00:14.4, real=0:00:16.0, mem=2413.5M) ---

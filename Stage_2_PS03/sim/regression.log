@@ -1,0 +1,77 @@
+TOOL:	xrun	22.09-s003: Started on Oct 11, 2026 at 01:29:22 IST
+TOOL:	xrun(64)	22.09-s003: Started on Oct 11, 2026 at 01:29:22 IST
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+file: ../rtl/feedback_path.v
+	module worklib.feedback_path:v
+		errors: 0, warnings: 0
+file: ../rtl/pi_controller.v
+	module worklib.pi_controller:v
+		errors: 0, warnings: 0
+file: ../rtl/protection_stage.v
+	module worklib.protection_stage:v
+		errors: 0, warnings: 0
+file: ../rtl/pwm_core.v
+	module worklib.pwm_core:v
+		errors: 0, warnings: 0
+file: ../rtl/pwm_motor_controller_top.v
+	module worklib.pwm_motor_controller_top:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmelab: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_pwm_motor_controller
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+xmvlog_cg: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+		worklib.pwm_core:v <0x284f70bc>
+			streams:  12, words:  6037
+		worklib.protection_stage:v <0x2fb47ed4>
+			streams:  15, words:  6508
+		worklib.pi_controller:v <0x768139b2>
+			streams:   8, words:  3261
+		worklib.feedback_path:v <0x230af1d1>
+			streams:  13, words:  4984
+		worklib.pwm_motor_controller_top:v <0x3ffabd0f>
+			streams:  30, words: 11432
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 6       6
+		Registers:              71      71
+		Scalar wires:           21       -
+		Vectored wires:         26       -
+		Named events:            2       2
+		Always blocks:          25      25
+		Initial blocks:         12      12
+		Cont. assignments:       9       9
+		Pseudo assignments:     22      22
+		Assertions:              2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_pwm_motor_controller:sv
+xmsim: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+Loading snapshot worklib.tb_pwm_motor_controller:sv .................... Done
+SVSEED default: 1
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+--- Step 1: Configuring Registers via APB ---
+--- Step 2: Injecting Over-Current Fault ---
+--- Step 3: Clearing Fault and Resuming Operation ---
+SUCCESS: Verification complete with zero assertion failures!
+Simulation complete via $finish(1) at time 151355 NS + 0
+../tb/tb_pwm_motor_controller.sv:150         $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s003: Exiting on Oct 11, 2026 at 01:29:28 IST  (total: 00:00:06)

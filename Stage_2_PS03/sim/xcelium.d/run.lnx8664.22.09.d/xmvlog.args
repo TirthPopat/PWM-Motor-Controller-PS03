@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.22.09.d
+-RUNMODE
+-sv
+../tb/tb_integrated_flight_motor.sv
+../rtl/feedback_path.v
+../rtl/integrated_flight_motor_top.v
+../rtl/pi_controller.v
+../rtl/pid_engine_ps02.v
+../rtl/protection_stage.v
+../rtl/pwm_core.v
+../rtl/pwm_motor_controller_top.v
+-CDSLIB
+./xcelium.d/run.lnx8664.22.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.22.09.d/hdlrun.var
+-no_analogsolver
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.22.09.d/xllibs
+-ALLOWUNBOUND
+-hastop

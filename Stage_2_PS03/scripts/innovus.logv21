@@ -1,0 +1,284 @@
+[10/11 01:03:37      0s] 
+[10/11 01:03:37      0s] Cadence Innovus(TM) Implementation System.
+[10/11 01:03:37      0s] Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+[10/11 01:03:37      0s] 
+[10/11 01:03:37      0s] Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+[10/11 01:03:37      0s] Options:	
+[10/11 01:03:37      0s] Date:		Sun Oct 11 01:03:37 2026
+[10/11 01:03:37      0s] Host:		ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+[10/11 01:03:37      0s] OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+[10/11 01:03:37      0s] 
+[10/11 01:03:37      0s] License:
+[10/11 01:03:37      0s] 		[01:03:37.328562] Configured Lic search path (21.01-s002): 5281@14.139.1.126:1717@14.139.1.126
+
+[10/11 01:03:39      0s] 		invs	Innovus Implementation System	21.1	checkout succeeded
+[10/11 01:03:39      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[10/11 01:03:46      7s] Reset Parastics called with the command setExtractRCMode -reset@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:03:48      8s] @(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+[10/11 01:03:48      8s] @(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:03:48      8s] @(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+[10/11 01:03:48      8s] @(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+[10/11 01:03:48      8s] @(#)CDS: CPE v21.15-s076
+[10/11 01:03:48      8s] @(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+[10/11 01:03:48      8s] @(#)CDS: OA 22.60-p076 Wed May 18 13:45:29 2022
+[10/11 01:03:48      8s] @(#)CDS: SGN 20.10-d001 (01-Jun-2020) (64 bit executable, Qt5.9.0)
+[10/11 01:03:48      8s] @(#)CDS: RCDB 11.15.0
+[10/11 01:03:48      8s] @(#)CDS: STYLUS 21.12-s013_1 (08/15/2022 08:25 PDT)
+[10/11 01:03:48      8s] @(#)CDS: SystemPlanner-21.15Rel-8720 (21.15) (2022-08-22 18:31:54+0800)
+[10/11 01:03:48      8s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_122924_ic312.vit.ac.in_vlsi_SmqhpI.
+
+[10/11 01:03:48      8s] Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+[10/11 01:03:49      9s] 
+[10/11 01:03:49      9s] **INFO:  MMMC transition support version v31-84 
+[10/11 01:03:49      9s] 
+[10/11 01:03:49      9s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[10/11 01:03:49      9s] <CMD> suppressMessage ENCEXT-2799
+[10/11 01:03:49      9s] <CMD> getVersion
+[10/11 01:03:49      9s] <CMD> getVersion
+[10/11 01:03:50      9s] <CMD> getVersion
+[10/11 01:03:52      9s] [INFO] Loading PVS 22.20 fill procedures
+[10/11 01:03:52     10s] <CMD> win
+[10/11 01:03:55     10s] <CMD> set init_lef_file /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.lef
+[10/11 01:03:55     10s] <CMD> set init_verilog ../outputs_innovus/pwm_motor_controller_top_pr.v
+[10/11 01:03:55     10s] <CMD> set init_top_cell pwm_motor_controller_top
+[10/11 01:03:55     10s] <CMD> set init_pwr_net VDD
+[10/11 01:03:55     10s] <CMD> set init_gnd_net VSS
+[10/11 01:03:55     10s] <CMD> init_design
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] Loading LEF file /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.lef ...
+[10/11 01:03:55     10s] Set DBUPerIGU to M2 pitch 400.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'ECK' in macro 'TLATNCAX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'DFFHQX8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'NAND4XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'MXI2XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'INVX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI222X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'DLY3X1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X3' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OA22X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'QN' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI31X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'OA21X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+[10/11 01:03:55     10s] Type 'man IMPLF-201' for more detail.
+[10/11 01:03:55     10s] **WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+[10/11 01:03:55     10s] To increase the message display limit, refer to the product command reference manual.
+[10/11 01:03:55     10s] 
+##  Check design process and node:  
+##  Both design process and tech node are not set.
+
+[10/11 01:03:55     10s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.17min, fe_real=0.30min, fe_mem=1014.2M) ***
+[10/11 01:03:55     10s] #% Begin Load netlist data ... (date=10/11 01:03:55, mem=1013.7M)
+[10/11 01:03:55     10s] *** Begin netlist parsing (mem=1014.2M) ***
+[10/11 01:03:55     10s] Created 0 new cells from 0 timing libraries.
+[10/11 01:03:55     10s] Reading netlist ...
+[10/11 01:03:55     10s] Backslashed names will retain backslash and a trailing blank character.
+[10/11 01:03:55     10s] Reading verilog netlist '../outputs_innovus/pwm_motor_controller_top_pr.v'
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] *** Memory Usage v#1 (Current mem = 1018.250M, initial mem = 483.863M) ***
+[10/11 01:03:55     10s] *** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1018.2M) ***
+[10/11 01:03:55     10s] #% End Load netlist data ... (date=10/11 01:03:55, total cpu=0:00:00.0, real=0:00:00.0, peak res=1020.7M, current mem=1020.7M)
+[10/11 01:03:55     10s] Set top cell to pwm_motor_controller_top.
+[10/11 01:03:55     10s] Hooked 0 DB cells to tlib cells.
+[10/11 01:03:55     10s] Ending "BindLib:" (total cpu=0:00:00.0, real=0:00:00.0, peak res=1023.9M, current mem=1023.9M)
+[10/11 01:03:55     10s] Starting recursive module instantiation check.
+[10/11 01:03:55     10s] No recursion found.
+[10/11 01:03:55     10s] Building hierarchical netlist for Cell pwm_motor_controller_top ...
+[10/11 01:03:55     10s] *** Netlist is unique.
+[10/11 01:03:55     10s] Setting Std. cell height to 3420 DBU (smallest netlist inst).
+[10/11 01:03:55     10s] ** info: there are 488 modules.
+[10/11 01:03:55     10s] ** info: there are 4449 stdCell insts.
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] *** Memory Usage v#1 (Current mem = 1075.664M, initial mem = 483.863M) ***
+[10/11 01:03:55     10s] Horizontal Layer M1 offset = 190 (derived)
+[10/11 01:03:55     10s] Vertical Layer M2 offset = 200 (derived)
+[10/11 01:03:55     10s] Start create_tracks
+[10/11 01:03:55     10s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] **WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+[10/11 01:03:55     10s] Extraction setup Started 
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] Trim Metal Layers:
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:03:55     10s] Severity  ID               Count  Summary                                  
+[10/11 01:03:55     10s] WARNING   IMPLF-201          571  Pin '%s' in macro '%s' has no ANTENNADIF...
+[10/11 01:03:55     10s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[10/11 01:03:55     10s] *** Message Summary: 572 warning(s), 0 error(s)
+[10/11 01:03:55     10s] 
+[10/11 01:03:55     10s] <CMD> defIn ../outputs_innovus/pwm_motor_controller_top.def
+[10/11 01:03:55     10s] Reading DEF file '../outputs_innovus/pwm_motor_controller_top.def', current time is Sun Oct 11 01:03:55 2026 ...
+[10/11 01:03:55     10s] --- DIVIDERCHAR '/'
+[10/11 01:03:55     10s] --- UnitsPerDBU = 1.0000
+[10/11 01:03:55     10s] Horizontal Layer M1 offset = 190 (derived)
+[10/11 01:03:55     10s] Vertical Layer M2 offset = 200 (derived)
+[10/11 01:03:55     10s] Start create_tracks
+[10/11 01:03:55     10s] Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+[10/11 01:03:55     10s] --- DIEAREA (0 0) (410000 409640)
+[10/11 01:03:55     10s] Extracting standard cell pins and blockage ...... 
+[10/11 01:03:55     10s] Pin and blockage extraction finished
+[10/11 01:03:55     10s] Extracting macro/IO cell pins and blockage ...... 
+[10/11 01:03:55     10s] Pin and blockage extraction finished
+[10/11 01:03:55     10s] defIn read 10000 lines...
+[10/11 01:03:55     10s] defIn read 20000 lines...
+[10/11 01:03:55     10s] defIn read 30000 lines...
+[10/11 01:03:55     10s] defIn read 40000 lines...
+[10/11 01:03:55     10s] defIn read 50000 lines...
+[10/11 01:03:55     10s] defIn read 60000 lines...
+[10/11 01:03:55     10s] defIn read 70000 lines...
+[10/11 01:03:55     10s] defIn read 80000 lines...
+[10/11 01:03:55     10s] defIn read 90000 lines...
+[10/11 01:03:55     10s] DEF file '../outputs_innovus/pwm_motor_controller_top.def' is parsed, current time is Sun Oct 11 01:03:55 2026.
+[10/11 01:03:55     10s] Updating the floorplan ...
+[10/11 01:04:01     11s] <CMD> streamOut ../outputs_innovus/pwm_motor_controller_top.gds -mapFile /home/install/FOUNDRY/analog/45nm_rev/soce/streamOut.map -libName DesignLib -units 1000 -mode ALL
+[10/11 01:04:01     11s] Parse flat map file...
+[10/11 01:04:01     11s] Writing GDSII file ...
+[10/11 01:04:01     11s] 	****** db unit per micron = 2000 ******
+[10/11 01:04:01     11s] 	****** output gds2 file unit per micron = 1000 ******
+[10/11 01:04:01     11s] 	****** unit scaling factor = 0.5 ******
+[10/11 01:04:01     11s] **WARN: (IMPOGDS-250):	Specified unit is smaller than the one in db. You may have rounding problems
+[10/11 01:04:01     11s] Output for instance
+[10/11 01:04:01     11s] Output for bump
+[10/11 01:04:01     11s] Output for physical terminals
+[10/11 01:04:01     11s] Output for logical terminals
+[10/11 01:04:01     11s] Output for regular nets
+[10/11 01:04:01     11s] Output for special nets and metal fills
+[10/11 01:04:01     11s] Output for via structure generation total number 25
+[10/11 01:04:01     11s] Statistics for GDS generated (version 3)
+[10/11 01:04:01     11s] ----------------------------------------
+[10/11 01:04:01     11s] Stream Out Layer Mapping Information:
+[10/11 01:04:01     11s] GDS Layer Number          GDS Layer Name
+[10/11 01:04:01     11s] ----------------------------------------
+[10/11 01:04:01     11s]     235                          DIEAREA
+[10/11 01:04:01     11s]     42                            Metal9
+[10/11 01:04:01     11s]     41                              Via8
+[10/11 01:04:01     11s]     40                            Metal8
+[10/11 01:04:01     11s]     39                              Via7
+[10/11 01:04:01     11s]     38                            Metal7
+[10/11 01:04:01     11s]     37                              Via6
+[10/11 01:04:01     11s]     35                            Metal6
+[10/11 01:04:01     11s]     34                              Via5
+[10/11 01:04:01     11s]     33                            Metal5
+[10/11 01:04:01     11s]     10                              Via2
+[10/11 01:04:01     11s]     9                             Metal2
+[10/11 01:04:01     11s]     7                             Metal1
+[10/11 01:04:01     11s]     31                            Metal4
+[10/11 01:04:01     11s]     11                            Metal3
+[10/11 01:04:01     11s]     8                               Via1
+[10/11 01:04:01     11s]     30                              Via3
+[10/11 01:04:01     11s]     32                              Via4
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Stream Out Information Processed for GDS version 3:
+[10/11 01:04:01     11s] Units: 1000 DBU
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Object                             Count
+[10/11 01:04:01     11s] ----------------------------------------
+[10/11 01:04:01     11s] Instances                           4449
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Ports/Pins                             0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Nets                               57203
+[10/11 01:04:01     11s]     metal layer Metal1             20094
+[10/11 01:04:01     11s]     metal layer Metal2             26293
+[10/11 01:04:01     11s]     metal layer Metal3              9273
+[10/11 01:04:01     11s]     metal layer Metal4              1482
+[10/11 01:04:01     11s]     metal layer Metal5                61
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s]     Via Instances                  23603
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Special Nets                           8
+[10/11 01:04:01     11s]     metal layer Metal5                 4
+[10/11 01:04:01     11s]     metal layer Metal6                 4
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s]     Via Instances                      8
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Metal Fills                            0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s]     Via Instances                      0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Metal FillOPCs                         0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s]     Via Instances                      0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Metal FillDRCs                         0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s]     Via Instances                      0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Text                                  81
+[10/11 01:04:01     11s]     metal layer Metal1                81
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Blockages                              0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Custom Text                            0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Custom Box                             0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] Trim Metal                             0
+[10/11 01:04:01     11s] 
+[10/11 01:04:01     11s] ######Streamout is finished!
+[10/11 01:04:24     12s] <CMD> fit
+[10/11 01:04:54     14s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Sun Oct 11 01:04:54 2026
+  Total CPU time:     0:00:18
+  Total real time:    0:01:19
+  Peak memory (main): 1509.70MB
+
+[10/11 01:04:54     14s] 
+[10/11 01:04:54     14s] *** Memory Usage v#1 (Current mem = 1626.828M, initial mem = 483.863M) ***
+[10/11 01:04:54     14s] 
+[10/11 01:04:54     14s] *** Summary of all messages that are not suppressed in this session:
+[10/11 01:04:54     14s] Severity  ID               Count  Summary                                  
+[10/11 01:04:54     14s] WARNING   IMPLF-201          571  Pin '%s' in macro '%s' has no ANTENNADIF...
+[10/11 01:04:54     14s] WARNING   IMPOGDS-250          1  Specified unit is smaller than the one i...
+[10/11 01:04:54     14s] WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+[10/11 01:04:54     14s] *** Message Summary: 573 warning(s), 0 error(s)
+[10/11 01:04:54     14s] 
+[10/11 01:04:54     14s] --- Ending "Innovus" (totcpu=0:00:14.5, real=0:01:17, mem=1626.8M) ---

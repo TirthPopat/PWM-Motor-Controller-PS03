@@ -1,0 +1,71 @@
+TOOL:	xrun	22.09-s003: Started on Oct 11, 2026 at 02:58:23 IST
+TOOL:	xrun(64)	22.09-s003: Started on Oct 11, 2026 at 02:58:23 IST
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun(64): 22.09-s003: (c) Copyright 1995-2022 Cadence Design Systems, Inc.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+Recompiling... reason: file '../rtl/integrated_flight_motor_top.v' is newer than expected.
+	expected: Sun Oct 11 02:34:30 2026
+	actual:   Sun Oct 11 02:54:08 2026
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+file: ../tb/tb_integrated_flight_motor.sv
+	module worklib.tb_integrated_flight_motor:sv
+		errors: 0, warnings: 0
+file: ../rtl/integrated_flight_motor_top.v
+	module worklib.integrated_flight_motor_top:v
+		errors: 0, warnings: 0
+file: ../rtl/pwm_motor_controller_top.v
+	module worklib.pwm_motor_controller_top:v
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+xmelab: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_integrated_flight_motor
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+xmvlog_cg: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+		worklib.pwm_motor_controller_top:v <0x521b333b>
+			streams:  30, words: 11631
+		worklib.integrated_flight_motor_top:v <0x3e0067d3>
+			streams:   2, words:   502
+		worklib.tb_integrated_flight_motor:sv <0x799c98ef>
+			streams:  24, words: 20577
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 8       8
+		Registers:              67      67
+		Scalar wires:           26       -
+		Vectored wires:         37       -
+		Named events:            2       2
+		Always blocks:          25      25
+		Initial blocks:          3       3
+		Cont. assignments:      13      15
+		Pseudo assignments:     27      27
+		Assertions:              2       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_integrated_flight_motor:sv
+xmsim: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/vlsi/projmisp/stanford_cnfet/standford_cnfet'.
+Loading snapshot worklib.tb_integrated_flight_motor:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /home/install/XCELIUM2209/tools/xcelium/files/xmsimrc
+xcelium> run
+--- Step 1: Initializing Integrated Flight-Control Chain ---
+--- Step 2: Testing Mode Switch (Stabilize -> Acro) ---
+--- Step 3: Injecting Cross-Block Over-Current Fault ---
+SUCCESS: System successfully entered Failsafe state!
+SUCCESS: Integrated Flight-Control Motor Chain Verification Complete!
+Simulation complete via $finish(1) at time 3545 NS + 0
+../tb/tb_integrated_flight_motor.sv:130         $finish;
+xcelium> exit
+TOOL:	xrun(64)	22.09-s003: Exiting on Oct 11, 2026 at 02:58:28 IST  (total: 00:00:05)

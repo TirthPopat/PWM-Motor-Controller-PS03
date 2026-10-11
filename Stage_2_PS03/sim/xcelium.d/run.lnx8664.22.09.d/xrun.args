@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-sv
+../tb/tb_integrated_flight_motor.sv
+../rtl/feedback_path.v
+../rtl/integrated_flight_motor_top.v
+../rtl/pi_controller.v
+../rtl/pid_engine_ps02.v
+../rtl/protection_stage.v
+../rtl/pwm_core.v
+../rtl/pwm_motor_controller_top.v
+-top
+tb_integrated_flight_motor
+-access
++rwc

@@ -1,0 +1,46 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Sat Oct 10 22:30:16 2026                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v21.15-s110_1 (64bit) 09/23/2022 13:08 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: NanoRoute 21.15-s110_1 NR220912-2004/21_15-UB (database version 18.20.592) {superthreading v2.17}
+#@(#)CDS: AAE 21.15-s039 (64bit) 09/23/2022 (Linux 3.10.0-693.el7.x86_64)
+#@(#)CDS: CTE 21.15-s038_1 () Sep 20 2022 11:42:13 ( )
+#@(#)CDS: SYNTECH 21.15-s012_1 () Sep  5 2022 10:25:51 ( )
+#@(#)CDS: CPE v21.15-s076
+#@(#)CDS: IQuantus/TQuantus 21.1.1-s867 (64bit) Sun Jun 26 22:12:54 PDT 2022 (Linux 3.10.0-693.el7.x86_64)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+getVersion
+getVersion
+set init_lef_file /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.lef
+set init_verilog ../outputs/pwm_motor_controller_top_syn.v
+set init_top_cell pwm_motor_controller_top
+set init_pwr_net VDD
+set init_gnd_net VSS
+setDesignMode -process 45
+init_design
+floorPlan -r 1.0 0.70 10 10 10 10
+globalNetConnect VDD -type pgpin -pin VDD -inst *
+globalNetConnect VSS -type pgpin -pin VSS -inst *
+addRing -type core_rings -nets {VDD VSS} -width 2 -spacing 1 -layer {top Metal6 bottom Metal6 left Metal5 right Metal5}
+setPlaceMode -fp false
+place_design
+create_ccopt_clock_tree_spec
+win
+fit
+zoomBox 40.34450 67.85850 247.11950 167.82650
+zoomBox -321.85400 -97.17650 436.98200 269.69300
+zoomBox 39.71450 67.36500 246.49100 167.33400
+zoomBox 143.37500 114.84800 191.26900 138.00300
+zoomBox 166.10600 125.26100 179.15800 131.57100
+zoomBox 155.44800 120.40350 184.86600 134.62600
+zoomBox 104.35900 96.97350 212.32250 149.17000
+zoomBox -44.51850 28.45100 292.26500 191.27350
+zoomBox -319.24250 -97.99400 439.78350 268.96750
+zoomBox -128.68050 -10.28550 337.45700 215.07500

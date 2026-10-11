@@ -1,0 +1,400 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2021 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v21.15-s110_1, built Fri Sep 23 13:08:12 PDT 2022
+Options:	-files run_innovus.tcl -win 
+Date:		Sat Oct 10 22:30:08 2026
+Host:		ic312.vit.ac.in (x86_64 w/Linux 4.18.0-477.10.1.el8_8.x86_64) (12cores*20cpus*12th Gen Intel(R) Core(TM) i7-12700 25600KB)
+OS:		Red Hat Enterprise Linux release 8.8 (Ootpa)
+
+License:
+		[22:30:08.339322] Configured Lic search path (21.01-s002): 5280@cadence:29000@172.16.77.98
+
+		invs	Innovus Implementation System	21.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (63 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getVersion
+<CMD> getVersion
+<CMD> getVersion
+[INFO] Loading PVS 22.20 fill procedures
+Sourcing file "run_innovus.tcl" ...
+<CMD> set init_lef_file /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.lef
+<CMD> set init_verilog ../outputs/pwm_motor_controller_top_syn.v
+<CMD> set init_top_cell pwm_motor_controller_top
+<CMD> set init_pwr_net VDD
+<CMD> set init_gnd_net VSS
+<CMD> setDesignMode -process 45
+##  Process: 45            (User Set)               
+##     Node: (not set)                           
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+Applying the recommended capacitance filtering threshold values for 45nm process node: total_c_th=0, relative_c_th=1 and coupling_c_th=0.1.
+	These values will be used by all post-route extraction engines, including TQuantus, IQuantus and Quantus QRC extraction.
+	Capacitance filtering mode(-capFilterMode option of the setExtractRCMode) is 'relAndCoup' for all engines.
+	The accuracy mode for postRoute effortLevel low extraction will be set to 'high'.
+	Default value for EffortLevel(-effortLevel option of the setExtractRCMode) in postRoute extraction mode will be 'medium' if Quantus QRC technology file is specified else 'low'.
+<CMD> init_design
+
+Loading LEF file /home/install/FOUNDRY/digital/45nm/LIBS/lef/gsclib045.fixed.lef ...
+Set DBUPerIGU to M2 pitch 400.
+**WARN: (IMPLF-201):	Pin 'ECK' in macro 'TLATNCAX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'DFFHQX8' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'NAND4XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'MXI2XL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'QN' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'TLATNSRXL' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'INVX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI222X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'DLY3X1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'QN' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X3' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'OA22X4' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'QN' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'SDFFSRX2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Q' in macro 'EDFFHQX1' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'OAI31X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'OA21X2' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (IMPLF-201):	Pin 'Y' in macro 'CLKAND2X6' has no ANTENNADIFFAREA value defined. The library data is incomplete and some process antenna rules will not be checked correctly.
+Type 'man IMPLF-201' for more detail.
+**WARN: (EMS-27):	Message (IMPLF-201) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+
+##  Check design process and node:  
+##  Design tech node is not set.
+
+*** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.20min, fe_real=0.32min, fe_mem=1001.1M) ***
+#% Begin Load netlist data ... (date=10/10 22:30:27, mem=999.1M)
+*** Begin netlist parsing (mem=1001.1M) ***
+Created 0 new cells from 0 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilog netlist '../outputs/pwm_motor_controller_top_syn.v'
+
+*** Memory Usage v#1 (Current mem = 1005.102M, initial mem = 483.863M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=1005.1M) ***
+#% End Load netlist data ... (date=10/10 22:30:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1005.6M, current mem=1004.7M)
+Set top cell to pwm_motor_controller_top.
+Hooked 0 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell pwm_motor_controller_top ...
+*** Netlist is unique.
+** info: there are 488 modules.
+** info: there are 4333 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 1068.516M, initial mem = 483.863M) ***
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+**WARN: (IMPSYT-7328):	The design has been initialized in physical-only mode because the init_mmmc_file global variable was not defined. Timing analysis will not be possible within this session. You can only use commands that do not depend on timing data. If you need to use timing, you need to restart with an init_mmmc_file to define the timing setup, or you can save this design and use restoreDesign -mmmc_file <viewDef.tcl> to add the timing setup information.
+Extraction setup Started 
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPLF-201          571  Pin '%s' in macro '%s' has no ANTENNADIF...
+WARNING   IMPSYT-7328          1  The design has been initialized in physi...
+*** Message Summary: 572 warning(s), 0 error(s)
+
+<CMD> floorPlan -r 1.0 0.70 10 10 10 10
+Horizontal Layer M1 offset = 190 (derived)
+Vertical Layer M2 offset = 200 (derived)
+Start create_tracks
+Generated pitch 0.2 in Metal9 is different from 0.33 defined in technology file in unpreferred direction.
+Generated pitch 0.38 in Metal9 is different from 0.33 defined in technology file in preferred direction.
+Generated pitch 0.285 in Metal8 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.285 in Metal7 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal6 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal5 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal4 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.19 in Metal3 is different from 0.2 defined in technology file in preferred direction.
+Generated pitch 0.19 in Metal2 is different from 0.2 defined in technology file in unpreferred direction.
+Generated pitch 0.2 in Metal1 is different from 0.19 defined in technology file in unpreferred direction.
+<CMD> globalNetConnect VDD -type pgpin -pin VDD -inst *
+<CMD> globalNetConnect VSS -type pgpin -pin VSS -inst *
+<CMD> addRing -type core_rings -nets {VDD VSS} -width 2 -spacing 1 -layer {top Metal6 bottom Metal6 left Metal5 right Metal5}
+#% Begin addRing (date=10/10 22:30:27, mem=1281.1M)
+
+
+viaInitial starts at Sat Oct 10 22:30:27 2026
+viaInitial ends at Sat Oct 10 22:30:27 2026
+Loading cell geometries (cpu: 0:00:00.0, real: 0:00:00.0, peak mem: 1303.7M)
+Ring generation is complete.
+vias are now being generated.
+addRing created 8 wires.
+ViaGen created 8 vias, deleted 0 via to avoid violation.
++--------+----------------+----------------+
+|  Layer |     Created    |     Deleted    |
++--------+----------------+----------------+
+| Metal5 |        4       |       NA       |
+|  Via5  |        8       |        0       |
+| Metal6 |        4       |       NA       |
++--------+----------------+----------------+
+#% End addRing (date=10/10 22:30:27, total cpu=0:00:00.0, real=0:00:00.0, peak res=1284.8M, current mem=1284.8M)
+<CMD> setPlaceMode -fp false
+<CMD> place_design
+*** placeDesign #1 [begin] : totSession cpu/real = 0:00:11.9/0:00:18.7 (0.6), mem = 1304.7M
+**WARN: (IMPSP-9513):	Timing constraint file does not exist
+**WARN: (IMPSP-9514):	Non-TimingDriven placement will be performed.
+*** Starting placeDesign default flow ***
+Deleted 0 physical inst  (cell - / prefix -).
+INFO: #ExclusiveGroups=0
+INFO: There are no Exclusive Groups.
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+Extracting macro/IO cell pins and blockage ...... 
+Pin and blockage extraction finished
+*** Starting "NanoPlace(TM) placement v#6 (mem=1328.7M)" ...
+No user-set net weight.
+Net fanout histogram:
+2		: 2100 (43.3%) nets
+3		: 1633 (33.7%) nets
+4     -	14	: 1027 (21.2%) nets
+15    -	39	: 76 (1.6%) nets
+40    -	79	: 7 (0.1%) nets
+80    -	159	: 0 (0.0%) nets
+160   -	319	: 0 (0.0%) nets
+320   -	639	: 2 (0.0%) nets
+640   -	1279	: 0 (0.0%) nets
+1280  -	2559	: 0 (0.0%) nets
+2560  -	5119	: 0 (0.0%) nets
+5120+		: 0 (0.0%) nets
+Options: clkGateAware ignoreScan pinGuide congEffort=auto gpeffort=medium 
+Scan chains were not defined.
+#std cell=4333 (0 fixed + 4333 movable) #buf cell=0 #inv cell=0 #block=0 (0 floating + 0 preplaced)
+#ioInst=0 #net=4826 #term=17010 #term/net=3.52, #fixedIo=0, #floatIo=0, #fixedPin=0, #floatPin=81
+stdCell: 4333 single + 0 double + 0 multi
+Total standard cell length = 13.9791 (mm), area = 0.0239 (mm^2)
+**Info: (IMPSP-307): Design contains fractional 17 cells.
+Estimated cell power/ground rail width = 0.213 um
+Average module density = 0.700.
+Density for the design = 0.700.
+       = stdcell_area 69896 sites (23904 um^2) / alloc_area 99900 sites (34166 um^2).
+Pin Density = 0.1703.
+            = total # of pins 17010 / total area 99900.
+=== lastAutoLevel = 8 
+**WARN: (IMPSP-9531):	Turning off clkGateAware when timingDriven is off
+Iteration  1: Total net bbox = 1.277e-09 (6.97e-10 5.80e-10)
+              Est.  stn bbox = 1.377e-09 (7.53e-10 6.24e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1345.2M
+Iteration  2: Total net bbox = 1.277e-09 (6.97e-10 5.80e-10)
+              Est.  stn bbox = 1.377e-09 (7.53e-10 6.24e-10)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1345.2M
+Iteration  3: Total net bbox = 1.101e+02 (5.09e+01 5.92e+01)
+              Est.  stn bbox = 1.273e+02 (5.81e+01 6.91e+01)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1356.0M
+Iteration  4: Total net bbox = 5.174e+04 (2.31e+04 2.86e+04)
+              Est.  stn bbox = 6.315e+04 (2.82e+04 3.49e+04)
+              cpu = 0:00:00.5 real = 0:00:01.0 mem = 1356.0M
+Iteration  5: Total net bbox = 6.598e+04 (3.18e+04 3.42e+04)
+              Est.  stn bbox = 8.096e+04 (3.86e+04 4.24e+04)
+              cpu = 0:00:00.7 real = 0:00:00.0 mem = 1356.0M
+Iteration  6: Total net bbox = 6.966e+04 (3.42e+04 3.55e+04)
+              Est.  stn bbox = 8.491e+04 (4.14e+04 4.35e+04)
+              cpu = 0:00:00.6 real = 0:00:01.0 mem = 1357.3M
+Iteration  7: Total net bbox = 9.465e+04 (4.87e+04 4.59e+04)
+              Est.  stn bbox = 1.118e+05 (5.71e+04 5.47e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1357.3M
+Iteration  8: Total net bbox = 9.465e+04 (4.87e+04 4.59e+04)
+              Est.  stn bbox = 1.118e+05 (5.71e+04 5.47e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1357.3M
+Iteration  9: Total net bbox = 7.705e+04 (3.77e+04 3.94e+04)
+              Est.  stn bbox = 9.262e+04 (4.50e+04 4.76e+04)
+              cpu = 0:00:01.1 real = 0:00:01.0 mem = 1358.3M
+Iteration 10: Total net bbox = 7.314e+04 (3.43e+04 3.89e+04)
+              Est.  stn bbox = 8.832e+04 (4.13e+04 4.70e+04)
+              cpu = 0:00:00.3 real = 0:00:01.0 mem = 1361.3M
+Iteration 11: Total net bbox = 9.854e+04 (4.94e+04 4.92e+04)
+              Est.  stn bbox = 1.156e+05 (5.76e+04 5.81e+04)
+              cpu = 0:00:02.6 real = 0:00:03.0 mem = 1361.3M
+Iteration 12: Total net bbox = 9.854e+04 (4.94e+04 4.92e+04)
+              Est.  stn bbox = 1.156e+05 (5.76e+04 5.81e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1361.3M
+Iteration 13: Total net bbox = 9.854e+04 (4.94e+04 4.92e+04)
+              Est.  stn bbox = 1.156e+05 (5.76e+04 5.81e+04)
+              cpu = 0:00:00.0 real = 0:00:00.0 mem = 1361.3M
+*** cost = 9.854e+04 (4.94e+04 4.92e+04) (cpu for global=0:00:04.5) real=0:00:06.0***
+Solver runtime cpu: 0:00:04.3 real: 0:00:04.3
+Core Placement runtime cpu: 0:00:04.4 real: 0:00:06.0
+**WARN: (IMPSP-9025):	No scan chain specified/traced.
+Type 'man IMPSP-9025' for more detail.
+**Info: (IMPSP-307): Design contains fractional 17 cells.
+*** Starting refinePlace (0:00:16.6 mem=1361.3M) ***
+Total net bbox length = 9.924e+04 (5.006e+04 4.918e+04) (ext = 2.198e+04)
+Move report: Detail placement moves 4333 insts, mean move: 0.55 um, max move: 18.37 um 
+	Max move on inst (u_pi_csa_tree_ADD_TC_OP_8_groupi_g19297): (80.24, 141.74) --> (98.60, 141.74)
+	Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1377.3MB
+Summary Report:
+Instances move: 4333 (out of 4333 movable)
+Instances flipped: 0
+Mean displacement: 0.55 um
+Max displacement: 18.37 um (Instance: u_pi_csa_tree_ADD_TC_OP_8_groupi_g19297) (80.2355, 141.74) -> (98.6, 141.74)
+	Length: 12 sites, height: 1 rows, site name: CoreSite, cell type: CLKINVX12
+Total net bbox length = 9.912e+04 (4.993e+04 4.919e+04) (ext = 2.191e+04)
+Runtime: CPU: 0:00:00.2 REAL: 0:00:00.0 MEM: 1377.3MB
+*** Finished refinePlace (0:00:16.7 mem=1377.3M) ***
+*** End of Placement (cpu=0:00:04.7, real=0:00:06.0, mem=1374.3M) ***
+**Info: (IMPSP-307): Design contains fractional 17 cells.
+default core: bins with density > 0.750 = 35.54 % ( 43 / 121 )
+Density distribution unevenness ratio = 5.143%
+Info: Disable timing driven in postCTS congRepair.
+
+Starting congRepair ...
+[NR-eGR] Track table information for default rule: 
+[NR-eGR] Metal1 has single uniform track structure
+[NR-eGR] Metal2 has single uniform track structure
+[NR-eGR] Metal3 has single uniform track structure
+[NR-eGR] Metal4 has single uniform track structure
+[NR-eGR] Metal5 has single uniform track structure
+[NR-eGR] Metal6 has single uniform track structure
+[NR-eGR] Metal7 has single uniform track structure
+[NR-eGR] Metal8 has single uniform track structure
+[NR-eGR] Metal9 has single uniform track structure
+[NR-eGR] Read 24 PG shapes
+[NR-eGR] Read 0 clock shapes
+[NR-eGR] Read 0 other shapes
+[NR-eGR] #Routing Blockages  : 0
+[NR-eGR] #Instance Blockages : 0
+[NR-eGR] #PG Blockages       : 24
+[NR-eGR] #Halo Blockages     : 0
+[NR-eGR] #Boundary Blockages : 0
+[NR-eGR] #Clock Blockages    : 0
+[NR-eGR] #Other Blockages    : 0
+[NR-eGR] Num Prerouted Nets = 0  Num Prerouted Wires = 0
+[NR-eGR] Read 4790 nets ( ignored 0 )
+[NR-eGR] ============ Routing rule table ============
+[NR-eGR] Rule id: 0  Nets: 4790
+[NR-eGR] ========================================
+[NR-eGR] 
+[NR-eGR] Layer group 1: route 4790 net(s) in layer range [2, 9]
+[NR-eGR] Early Global Route overflow of layer group 1: 0.00% H + 0.00% V. EstWL: 9.047952e+04um
+[NR-eGR] Congestion Analysis By layer: (blocked Gcells are excluded) 
+[NR-eGR]                        OverCon            
+[NR-eGR]                         #Gcell     %Gcell
+[NR-eGR]        Layer             (1-0)    OverCon
+[NR-eGR] ----------------------------------------------
+[NR-eGR]  Metal1 ( 1)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal2 ( 2)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal3 ( 3)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal4 ( 4)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal5 ( 5)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal6 ( 6)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal7 ( 7)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal8 ( 8)         0( 0.00%)   ( 0.00%) 
+[NR-eGR]  Metal9 ( 9)         0( 0.00%)   ( 0.00%) 
+[NR-eGR] ----------------------------------------------
+[NR-eGR]        Total         0( 0.00%)   ( 0.00%) 
+[NR-eGR] 
+[NR-eGR] Overflow after Early Global Route 0.00% H + 0.00% V
+Early Global Route congestion estimation runtime: 0.05 seconds, mem = 1375.8M
+Local HotSpot Analysis: normalized max congestion hotspot area = 0.00, normalized total congestion hotspot area = 0.00 (area is in unit of 4 std-cell row bins)
+Skipped repairing congestion.
+[NR-eGR]                 Length (um)   Vias 
+[NR-eGR] -----------------------------------
+[NR-eGR]  Metal1  (1H)             0  17437 
+[NR-eGR]  Metal2  (2V)         21801  22586 
+[NR-eGR]  Metal3  (3H)         44388   9384 
+[NR-eGR]  Metal4  (4V)         25299    133 
+[NR-eGR]  Metal5  (5H)          1124      4 
+[NR-eGR]  Metal6  (6V)           140      0 
+[NR-eGR]  Metal7  (7H)             0      0 
+[NR-eGR]  Metal8  (8V)             0      0 
+[NR-eGR]  Metal9  (9H)             0      0 
+[NR-eGR] -----------------------------------
+[NR-eGR]          Total        92752  49544 
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total half perimeter of net bounding box: 99119um
+[NR-eGR] Total length: 92752um, number of vias: 49544
+[NR-eGR] --------------------------------------------------------------------------
+[NR-eGR] Total eGR-routed clock nets wire length: 0um, number of vias: 0
+[NR-eGR] --------------------------------------------------------------------------
+Early Global Route wiring runtime: 0.05 seconds, mem = 1375.8M
+Tdgp not successfully inited but do clear! skip clearing
+End of congRepair (cpu=0:00:00.1, real=0:00:00.0)
+*** Finishing placeDesign default flow ***
+**placeDesign ... cpu = 0: 0: 5, real = 0: 0: 6, mem = 1373.8M **
+Tdgp not successfully inited but do clear! skip clearing
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPSP-9513           1  Timing constraint file does not exist    
+WARNING   IMPSP-9514           1  Non-TimingDriven placement will be perfo...
+WARNING   IMPSP-9531           1  Turning off clkGateAware when timingDriv...
+WARNING   IMPSP-9025           1  No scan chain specified/traced.          
+*** Message Summary: 4 warning(s), 0 error(s)
+
+*** placeDesign #1 [finish] : cpu/real = 0:00:05.0/0:00:06.0 (0.8), totSession cpu/real = 0:00:16.9/0:00:24.7 (0.7), mem = 1373.8M
+<CMD> create_ccopt_clock_tree_spec
+**ERROR: (IMPCCOPT-2403):	Cannot run 'create_ccopt_clock_tree_spec' as no delay corners are defined.
+**ERROR: (IMPSYT-6692):	Invalid return code while executing 'run_innovus.tcl' was returned and script processing was stopped. Review the following error in 'run_innovus.tcl' then restart.
+Error info: run_innovus.tcl: 
+    while executing
+"create_ccopt_clock_tree_spec"
+    (file "run_innovus.tcl" line 31)
+    invoked from within
+"::se_source_orig run_innovus.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel [concat ::se_source_orig $args]"
+    (procedure "source" line 188)
+    invoked from within
+"source run_innovus.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel #0 source run_innovus.tcl"
+    ("eval" body line 1)
+    invoked from within
+"eval {uplevel #0 source run_innovus.tcl}"
+    (in namespace inscope "::" script line 1)
+    invoked from within
+"namespace inscope :: eval "uplevel #0 source $fileName"".
+<CMD> win
+<CMD> fit
+<CMD> zoomBox 40.34450 67.85850 247.11950 167.82650
+<CMD> zoomBox -321.85400 -97.17650 436.98200 269.69300
+<CMD> zoomBox 39.71450 67.36500 246.49100 167.33400
+<CMD> zoomBox 143.37500 114.84800 191.26900 138.00300
+<CMD> zoomBox 166.10600 125.26100 179.15800 131.57100
+<CMD> zoomBox 155.44800 120.40350 184.86600 134.62600
+<CMD> zoomBox 104.35900 96.97350 212.32250 149.17000
+<CMD> zoomBox -44.51850 28.45100 292.26500 191.27350
+<CMD> zoomBox -319.24250 -97.99400 439.78350 268.96750
+<CMD> zoomBox -128.68050 -10.28550 337.45700 215.07500
