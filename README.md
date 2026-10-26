@@ -2,7 +2,7 @@
 
 VLSI Hackathon 2026, Sudarshana Semiconductors problem statement PS-03.
 
-A configurable PWM motor controller with closed-loop speed control. An APB-configurable
+A configurable PWM motor controller for particular instances with closed-loop speed control. An APB-configurable
 PWM generator drives an H-bridge (complementary outputs with dead-time). A tachometer or
 encoder input is synchronized, filtered and turned into a speed measurement, and a PI
 controller adjusts the duty cycle to hold the speed setpoint. A protection stage provides
